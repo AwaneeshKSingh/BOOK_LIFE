@@ -1,0 +1,73 @@
+body{
+    background-color:black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(image.JFIF.jfif);
+}
+
+h2
+{
+    position:relative;
+    transform: skew(-2deg, -2deg);
+    font-size: 24px;
+}
+
+p{
+    position:relative;
+    transform: skew(-2deg, -2deg);
+    font-size: 40px;
+    font-weight: 500em;
+}
+
+.heading{
+position: relative;
+padding: 20px;
+background: linear-gradient(to right,#000000 50%, #1b1919 50%);
+transform: skew(2deg, 2deg);
+}
+
+.cards{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); 
+  grid-template-rows: auto;
+   width:90%;
+   height:auto;
+   grid-gap: 0 40px;
+}
+
+.cards .card-1{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-1 .heading span{
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    margin: 0;
+    padding:0;
+    opacity: .15;
+    font-size: 200px;
+}
+
+.card-1:hover .heading span{
+    top: -50px;
+   transition-duration: 1s;
+}
+
+.cards .card-1:nth-child(1){
+    background: linear-gradient(315deg,#ff0057,#e64a19);
+}
+.cards .card-1:nth-child(2){
+background: linear-gradient(315deg,#89ff00,#00bcd4);
+}
+.cards .card-1:nth-child(3){
+background: linear-gradient(315deg,#ff0000,#ffc107);
+}
